@@ -3,148 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taarush Vashisht | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Taarush Vashisht | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+    <!-- HEADER -->
+    <header id="navbar">
+        <div class="nav-logo">TV</div>
         <nav>
-            <div class="logo">TV</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <a href="Taarush_Vashisht_Resume.pdf" download class="nav-resume-btn">Resume</a>
     </header>
 
+    <!-- HERO -->
     <section id="home">
-        <h1 class="fade-in">Hey, I’m Taarush Vashisht</h1>
-        <p>Aspiring Software Engineer | Tech Enthusiast</p>
-        <a href="#projects" class="btn">See My Projects</a>
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <p class="hero-tag">// SOFTWARE ENGINEER</p>
+            <h1 id="typewriter"></h1>
+            <p class="hero-sub">Backend · AI/ML · Cloud · Full-Stack</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Experience</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">3.97</span><span class="stat-label">MS GPA</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">10K+</span><span class="stat-label">Users Impacted</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
-        <h2>About Me</h2>
-        <a href="Taarush_Vashisht_Resume.pdf" download="Taarush_Vashisht_Resume" class="btn resume-btn">Download Resume</a>
+        <div class="section-label">// ABOUT ME</div>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="about-grid">
+            <div class="about-photo-wrap">
+                <img src="me.jpg" alt="Taarush Vashisht" class="about-photo">
+                <div class="photo-glow"></div>
+            </div>
+            <div class="about-text">
+                <p>
+                    I'm a <strong>Software Engineer</strong> with 2+ years of industry experience, currently pursuing my
+                    <strong>MS in Management Information Systems (GPA: 3.967)</strong> at the University at Buffalo, SUNY.
+                </p>
+                <p>
+                    At <strong>ProHance</strong>, I led full-stack upgrades — migrating WinForms to WPF, optimizing REST APIs,
+                    and shipping modular microservice components using C#, React, and MVVM architecture — improving responsiveness
+                    by <strong>25%</strong> across 10,000+ distributed users.
+                </p>
+                <p>
+                    I'm passionate about <strong>AI/ML and backend systems</strong> — from building RAG pipelines with LangChain
+                    and ChromaDB to NLP research at NIT Hamirpur. I thrive at the intersection of performance engineering
+                    and intelligent systems.
+                </p>
+                <div class="about-links">
+                    <a href="Taarush_Vashisht_Resume.pdf" download class="btn btn-primary">Download Resume</a>
+                    <a href="https://linkedin.com/in/taarush-vashisht-7b7422177" target="_blank" class="btn btn-outline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
 
-        <p>
-            I am a Software Engineer with <strong>2 years of experience</strong> in software development, specializing in C++, C# 
-            and backend development. With a strong foundation in Object-Oriented Programming (OOP) and experience in Windows Services, 
-            WPF, and RESTful APIs, I enjoy building efficient and scalable software solutions.
-        </p>
-        <p>
-            I have worked as a Technology Specialist at ProHance, where I played a key role in migrating legacy WinForms 
-            applications to WPF, optimizing performance, and enhancing UI/UX. Previously, at Amdocs, I gained hands-on 
-            experience with databases (Snowflake), cloud computing (Azure), and DevOps tools (Docker, Jenkins).
-        </p>
-        <p>
-            My passion for Machine Learning and Deep Learning led me to conduct NLP research at NIT Hamirpur, where I 
-            developed Neural and Phrase-Based translation models for low-resource languages using PyTorch, Moses, and fastText.
-        </p>
-        <p>
-            Beyond software, I have experience in game development using Unreal Engine 4 (UE4).
-             I am always eager to explore new technologies, solve challenging problems, and create impactful solutions.
-        </p>
+        <div class="education-wrap">
+            <h3 class="sub-heading">Education</h3>
+            <div class="edu-cards">
+                <div class="edu-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h4>University at Buffalo, SUNY</h4>
+                        <p class="edu-degree">M.S. Management Information Systems</p>
+                        <p class="edu-meta">GPA: 3.967 / 4.0 &nbsp;·&nbsp; Expected June 2026</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h4>NIT Hamirpur</h4>
+                        <p class="edu-degree">Dual Degree (B.Tech + M.Tech), Electronics & Communication Engineering</p>
+                        <p class="edu-meta">GPA: 8.46 / 10 &nbsp;·&nbsp; June 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
 
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-label">// EXPERIENCE</div>
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Technology Specialist</h3>
+                            <p class="timeline-company">ProHance &nbsp;·&nbsp; Bangalore, India</p>
+                        </div>
+                        <span class="timeline-date">Apr 2023 – Feb 2025</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Engineered full-stack upgrades migrating legacy WinForms to WPF using C# (.NET 4.5+), React, Java, and XML — improving system responsiveness by <strong>25%</strong> across 10,000+ distributed users.</li>
+                        <li>Optimized high-throughput REST API modules and caching layers with telemetry/observability integration, accelerating feature delivery velocity by <strong>30%</strong>.</li>
+                        <li>Modularized monolithic features into independently deployable service components via MVVM and clean architecture patterns, cutting delivery timelines by <strong>15%</strong> through rigorous unit testing.</li>
+                        <li>Leveraged AI-powered tools (Cursor, Claude, ChatGPT) in cross-functional teams to automate testing and debugging workflows, boosting engineering efficiency.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>C#</span><span>.NET</span><span>WPF</span><span>React</span><span>REST APIs</span><span>MVVM</span><span>Azure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-company">Amdocs &nbsp;·&nbsp; Pune, India</p>
+                        </div>
+                        <span class="timeline-date">Jul 2022 – Sep 2022</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Engineered production ETL data pipelines using Azure Data Factory and Snowflake, automating ingestion and transformation of large-scale datasets for real-time reporting.</li>
+                        <li>Deployed and maintained application modules in Azure and Docker environments, gaining proficiency in virtualization and cloud-based systems troubleshooting.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Azure</span><span>Snowflake</span><span>Docker</span><span>ETL</span><span>Data Factory</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
-        <h2>Projects</h2>
+        <div class="section-label">// PROJECTS</div>
+        <h2 class="section-title">What I've Built</h2>
         <div class="project-grid">
-    
+
+            <div class="project-card featured">
+                <div class="project-card-top">
+                    <span class="project-tag">AI / RAG</span>
+                    <div class="project-links">
+                        <a href="https://github.com/electleaf" target="_blank" class="icon-link" title="GitHub">
+                            <img src="github.svg.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+                <h3>Personal Knowledge Base (RAG)</h3>
+                <p>Privacy-first RAG application using LangChain, ChromaDB, and Google Gemini 2.0 Flash. Enables natural language querying over private PDF documents with zero data leaving local infrastructure.</p>
+                <ul class="project-bullets">
+                    <li>End-to-end document ingestion pipeline with PyPDFLoader and RecursiveCharacterTextSplitter (1000-char overlapping chunks)</li>
+                    <li>Dense vector search via Google's text-embedding-004 persisted in ChromaDB for low-latency top-k semantic retrieval</li>
+                    <li>Strict LangChain prompt orchestration enforcing hallucination-resistant, citation-grounded responses</li>
+                </ul>
+                <div class="project-tech">
+                    <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Gemini 2.0</span><span>RAG</span>
+                </div>
+            </div>
+
             <div class="project-card">
+                <div class="project-card-top">
+                    <span class="project-tag">NLP / ML</span>
+                </div>
+                <h3>Neural & Phrase-Based Machine Translation</h3>
+                <p>Hybrid translation and text classification system integrating BERT-style Transformer architectures with statistical phrase-mapping layers to process asymmetrical language pairs.</p>
+                <ul class="project-bullets">
+                    <li>FastText classifiers and custom preprocessing pipelines for text normalization and data imputation</li>
+                    <li>Achieved <strong>4.4 BLEU</strong> evaluation score on low-resource language datasets</li>
+                </ul>
+                <div class="project-tech">
+                    <span>Python</span><span>PyTorch</span><span>BERT</span><span>FastText</span><span>NLP</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-top">
+                    <span class="project-tag">Game Dev</span>
+                    <div class="project-links">
+                        <a href="https://github.com/electleaf/UE4" target="_blank" class="icon-link" title="GitHub">
+                            <img src="github.svg.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
                 <h3>Unreal Engine 4 Game</h3>
-                <p>3D game with physics-based movement in UE4 using C++.</p>
-                <a href="https://github.com/electleaf/UE4" class="btn">View on GitHub</a>
+                <p>3D game with physics-based movement built in UE4 using C++. Features custom character controllers, physics interactions, and game mechanics from scratch.</p>
+                <div class="project-tech">
+                    <span>C++</span><span>Unreal Engine 4</span><span>Game Dev</span>
+                </div>
             </div>
-    
+
             <div class="project-card">
+                <div class="project-card-top">
+                    <span class="project-tag">Deep Learning</span>
+                </div>
                 <h3>Retail Product Classification</h3>
-                <p>Used deep learning (CNN + LSTM) to classify products.</p>
+                <p>Deep learning pipeline using CNN + LSTM architecture to classify retail products from images and descriptions at scale.</p>
+                <div class="project-tech">
+                    <span>Python</span><span>CNN</span><span>LSTM</span><span>TensorFlow</span>
+                </div>
             </div>
-    
+
         </div>
     </section>
-    
 
+    <!-- SKILLS -->
     <section id="skills">
-        <h2>Skills</h2>
-        
-        <div class="skill-category">
-            <h3>Programming & Development</h3>
-            <ul class="skills-list">
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>Bash</li>
-                <li>Backend Development</li>
-                <li>Object-Oriented Programming</li>
-                <li>Windows Service</li>
-                <li>WPF</li>
-                <li>Windows Forms</li>
-                <li>RESTful APIs</li>
-                <li>Software Development Process</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-            </ul>
+        <div class="section-label">// SKILLS</div>
+        <h2 class="section-title">Tech Arsenal</h2>
+        <div class="skills-grid">
+
+            <div class="skill-block">
+                <h3><span class="skill-icon">⚡</span> Languages & Frameworks</h3>
+                <div class="skill-pills">
+                    <span>Python</span><span>C#</span><span>C++</span><span>Java</span><span>Go</span>
+                    <span>TypeScript</span><span>JavaScript</span><span>React</span><span>ASP.NET</span>
+                    <span>.NET / .NET Framework</span><span>HTML5/CSS3</span><span>SQL</span>
+                    <span>PostgreSQL</span><span>Bash</span><span>XAML</span><span>XML</span><span>LINQ</span>
+                </div>
+            </div>
+
+            <div class="skill-block">
+                <h3><span class="skill-icon">🤖</span> AI & Machine Learning</h3>
+                <div class="skill-pills">
+                    <span>LangChain</span><span>RAG Pipelines</span><span>Agentic Workflows</span>
+                    <span>BERT</span><span>FastText</span><span>NLP</span><span>PyTorch</span>
+                    <span>scikit-learn</span><span>Intent Classification</span><span>Information Retrieval</span>
+                    <span>Claude Code</span><span>GitHub Copilot</span><span>Cursor</span>
+                </div>
+            </div>
+
+            <div class="skill-block">
+                <h3><span class="skill-icon">☁️</span> Backend & Cloud</h3>
+                <div class="skill-pills">
+                    <span>AWS (Lambda, S3, RDS, EKS)</span><span>Azure</span><span>GCP</span>
+                    <span>Docker</span><span>Kubernetes</span><span>Microservices</span>
+                    <span>RESTful APIs</span><span>Apache Kafka</span><span>Apache Spark</span>
+                    <span>MySQL</span><span>DynamoDB</span><span>Snowflake</span>
+                    <span>WPF</span><span>WinForms</span><span>Windows Services</span>
+                </div>
+            </div>
+
+            <div class="skill-block">
+                <h3><span class="skill-icon">🛠️</span> Engineering & DevOps</h3>
+                <div class="skill-pills">
+                    <span>CI/CD (Jenkins, GitHub Actions)</span><span>Terraform</span><span>Git</span>
+                    <span>JIRA</span><span>Agile / Scrum</span><span>OOP & Design Patterns</span>
+                    <span>MVVM</span><span>Multi-threading</span><span>Async Programming</span>
+                    <span>Load Testing</span><span>Telemetry & Observability</span>
+                    <span>Data Structures & Algorithms</span><span>TCP/IP Networking</span>
+                </div>
+            </div>
+
         </div>
-    
-        <div class="skill-category">
-            <h3>Analytics & Technologies</h3>
-            <ul class="skills-list">
-                <li>MySQL</li>
-                <li>SQLite</li>
-                <li>Snowflake</li>
-                <li>TensorFlow</li>
-                <li>Flask</li>
-                <li>Postman</li>
-                <li>Unreal Engine 4</li>
-                <li>Power BI</li>
-                <li>Docker</li>
-                <li>Cloud Computing</li>
-                <li>Operating Systems</li>
-                <li>Git</li>
-            </ul>
-        </div>
-    
-        <div class="skill-category">
-            <h3>Media & Creative Tools</h3>
-            <ul class="skills-list">
-                <li>Adobe Premiere Pro</li>
-                <li>Adobe Audition</li>
-                <li>Adobe After Effects</li>
-            </ul>
+
+        <div class="cert-wrap">
+            <div class="cert-card">
+                <span class="cert-icon">🏆</span>
+                <div>
+                    <p class="cert-title">Google IT Automation with Python</p>
+                    <p class="cert-issuer">Professional Certificate &nbsp;·&nbsp; Google</p>
+                </div>
+            </div>
         </div>
     </section>
-    
 
+    <!-- CONTACT -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <span id="email">taarushvashisht.127@gmail.com</span> 
-        <button id="copyEmail">Copy</button></p>
-        
-        <div class="social-icons">
-            <section id="Socials">
-                <h2>Socials</h2>
-                <a href="https://github.com/electleaf" target="_blank">
-                    <img src="github.svg.png" alt="GitHub">
-                </a>
-                <a href="https://linkedin.com/in/taarush-vashisht-7b7422177" target="_blank">
-                    <img src="linkedin.svg.png" alt="LinkedIn">
-                </a>
-            </section>
-           
+        <div class="section-label">// CONTACT</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-sub">Open to full-time Software Engineer roles — backend, AI/ML, and full-stack.</p>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <div class="contact-row">
+                    <span id="email">taarushvashisht127@gmail.com</span>
+                    <button id="copyEmail">Copy</button>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                <span>(716) 617-8194</span>
+            </div>
+        </div>
+
+        <div class="social-row">
+            <a href="https://github.com/electleaf" target="_blank" class="social-card">
+                <img src="github.svg.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/taarush-vashisht-7b7422177" target="_blank" class="social-card">
+                <img src="linkedin.svg.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
         </div>
     </section>
-    
 
-    <button id="scrollTop">↑</button>
-    
+    <footer>
+        <p>© 2025 Taarush Vashisht &nbsp;·&nbsp; Built with passion</p>
+    </footer>
+
+    <button id="scrollTop" title="Back to top">↑</button>
+
     <script src="script.js"></script>
 </body>
 </html>
